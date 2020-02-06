@@ -1,6 +1,5 @@
 package tuvision.service.cliente;
 
-import javax.xml.bind.annotation.XmlElement;
 
 public class Cliente {
 
@@ -8,9 +7,7 @@ public class Cliente {
 	private String nombre;
 	private String apellido;
 	private String rut;
-	@XmlElement(required=false)
 	private String email;
-	@XmlElement(required=false)
 	private String telefono;
 	public String getId() {
 		return id;
