@@ -1,0 +1,4 @@
+#NOTE: This is an Aether internal implementation file, its format can be changed without prior notice.
+#Wed Feb 05 21:53:00 CLST 2020
+exec-maven-plugin-1.6.0.pom>libs-snapshot=
+exec-maven-plugin-1.6.0.jar>libs-snapshot=
