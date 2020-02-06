@@ -9,7 +9,7 @@ import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
-import tuvision.mongodb.cliente.ClienteInsertar;
+import cl.esteban.pruebas.models.ClienteInsertar;
 
 @RestController
 @Component
@@ -17,8 +17,6 @@ public class ClienteController {
 	
 	@Autowired
     private ClienteInsertar service;
-	
-
 	
 	@RequestMapping("/crear")
 	public ResponseEntity<Boolean> create(@RequestBody Cliente cliente) throws URISyntaxException {

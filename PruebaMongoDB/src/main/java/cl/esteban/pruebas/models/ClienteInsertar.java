@@ -1,11 +1,9 @@
-package tuvision.mongodb.cliente;
+package cl.esteban.pruebas.models;
 
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
-
-import tuvision.service.cliente.Cliente;
 
 @Service
 public class ClienteInsertar {
@@ -14,7 +12,7 @@ public class ClienteInsertar {
 
 	private static final Logger LOGGER = LogManager.getLogger(ClienteInsertar.class);
 
-	public Boolean add(Cliente cliente) {
+	public Boolean add(Persona cliente) {
 		try {
 			repository.save(cliente);
 			return true;
