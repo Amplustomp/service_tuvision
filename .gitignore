@@ -29,3 +29,8 @@ build/
 
 ### VS Code ###
 .vscode/
+
+### ARTIFACTORY ###
+.m2/
+.m2/repository
+.metadata/
