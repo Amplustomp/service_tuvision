@@ -31,5 +31,6 @@ build/
 .vscode/
 
 ### ARTIFACTORY ###
-.m2/**
+.m2/
+.m2/repository
 .metadata/
