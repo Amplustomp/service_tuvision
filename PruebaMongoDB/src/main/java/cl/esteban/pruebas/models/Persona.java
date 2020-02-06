@@ -3,6 +3,7 @@ package cl.esteban.pruebas.models;
 public class Persona {
 	private String nombre;
 	private String apellido;
+
 	public String getNombre() {
 		return nombre;
 	}
@@ -13,6 +14,10 @@ public class Persona {
 		return apellido;
 	}
 	public void setApellido(String apellido) {
+		this.apellido = apellido;
+	}
+	public Persona(String nombre, String apellido) {
+		this.nombre = nombre;
 		this.apellido = apellido;
 	}
 }

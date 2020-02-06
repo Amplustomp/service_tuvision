@@ -12,9 +12,11 @@ public class ClienteInsertar {
 
 	private static final Logger LOGGER = LogManager.getLogger(ClienteInsertar.class);
 
+
 	public Boolean add(Persona cliente) {
+		LOGGER.info("Cliente Final: " + cliente);
 		try {
-			repository.save(cliente);
+			repository.save( new Persona(cliente.getNombre(),cliente.getApellido()) );
 			return true;
 		} catch (Exception e) {
 			LOGGER.error("Ha ocurrido un error: " + e);
