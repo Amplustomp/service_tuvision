@@ -1,5 +1,7 @@
 package cl.tuvision.cliente.models;
 
+import javax.validation.constraints.Size;
+
 import org.springframework.data.annotation.Id;
 import org.springframework.data.mongodb.core.index.Indexed;
 import org.springframework.data.mongodb.core.mapping.Document;
@@ -10,7 +12,7 @@ public class Cliente {
 	private String nombre;
 	private String apellido;
 	@Id
-	@Indexed
+	@Size(min = 8, max = 10, message = "Rut sin código verificador y sin puntos")
 	private String rut;
 	private String email;
 	private String telefono;

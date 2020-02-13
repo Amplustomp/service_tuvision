@@ -1,18 +1,16 @@
-package cl.tuvision.cliente.models;
-
-import java.util.Arrays;
-import java.util.List;
+package cl.tuvision.cliente.controller;
 
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
-import org.springframework.beans.factory.annotation.Value;
 import org.springframework.context.annotation.AnnotationConfigApplicationContext;
 import org.springframework.data.mongodb.core.MongoTemplate;
-import org.springframework.data.mongodb.core.query.Criteria;
-import org.springframework.data.mongodb.core.query.Query;
 import org.springframework.data.mongodb.repository.config.EnableMongoRepositories;
 
+import cl.tuvision.cliente.models.Cliente;
 import cl.tuvision.cliente.service.ClienteService;
+import cl.tuvision.configuracion.MongoDBConfig;
+
+
 @EnableMongoRepositories(basePackages = "cl.tuvision.cliente.models")
 
 
